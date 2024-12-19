@@ -1,5 +1,5 @@
 # FYFLO-CS-HUD-sinicize
-原作者:github.com/fyflo/CS-CS2-CSGO-HUDS-Observer-fyflo，本项目为汉化
+原作者:fyflo，本项目是CS赛事UI，汉化由F1K0完成。
 
 [原作者twitch](https://www.twitch.tv/fyflo)
 
