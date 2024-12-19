@@ -10,7 +10,7 @@
 [聊天QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=YOEMEy-Wua8lnaPlQ2O13CHggFL77qTm&jump_from=webapi&authKey=0MIOvc4P6/yWUcHJcu1UfFQDyzFsJPmTfXZSGRbqQavgRNEEdF3d9LZxueHj0U2P)
 
 ## 分辨率大于1920 x 1080的显示器设置
-1.请前往以下文件夹地址: `CS2-CSGO-HUDS-Observer-fyflo-main\HUD\overlay` 并在中根据您的需要调整分辨率 `package.json` 文件里 ("width": `设置宽度`, "height": `设置高度`).
+1.请前往以下文件夹地址: `CS2-CSGO-HUDS-Observer-fyflo-main\HUD\overlay` 中的 `package.json` 文件里根据您的需要调整分辨里 ("width": `设置宽度`, "height": `设置高度`).
 2. 如果HUD显示错误, 在任务栏中选中它, 并且按下 `Win+Shift+方向键` 让其正确显示.
 
 ## 自动导播指令(目前会有BUG，请尝试后使用。)
