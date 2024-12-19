@@ -17,10 +17,10 @@
 请在控制台输入以下指令 `spec_autodirector 1` 要关可以把1设置为0
 
 ## 应用程序更新
-+ 现在，该应用程序添加了通过部分中的按钮管理团队的功能：几局几胜选项和局数胜利卡。.
++ 该应用程序添加了通过部分中的按钮管理团队的功能：几局几胜选项和局数胜利卡。.
 还增加了一个使用HUD投票地图的部分.
 
-<details><summary>列入</summary>
+<details><summary>列如</summary>
 
 ![Ex1](https://i.imgur.com/d5aTrEG.png)
 ![Ex2](https://i.imgur.com/eRsTkrZ.png)
