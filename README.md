@@ -133,9 +133,9 @@
 ##
 - 
 打开 CS2_HUD_fyflo.exe##
-- 然后运行OVERLAY.exe: [OVERLAY 下载](https://drive.google.com/file/d/1_NoHJRfSVFF8yTp8hXabf9Du76mowhPD/view?usp=drive_link) (放置在文件夹CS-CS2-CSGO-HUDS-Observer-fyflo)或只是去你的浏览器 [http://你的 IP:2626]
-- Ensure that in the Overlay exe folder, there is a config.json file with the following:
-- Radar will be on :36364 port [http://localhost:36364](http://localhost:36364)
+- 然后运行OVERLAY.exe: [OVERLAY 下载](https://drive.google.com/file/d/1_NoHJRfSVFF8yTp8hXabf9Du76mowhPD/view?usp=drive_link) (放置在文件夹CS-CS2-CSGO-HUDS-Observer-fyflo)或只是去你的浏览器 (http://你的 IP:2626)
+- 确保在Overlay exe文件夹中，有一个包含以下内容的config.json文件:
+- 雷达将在 :36364 端口 (http://localhost:36364)
 
 ```javascript
 //config.json
