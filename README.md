@@ -55,7 +55,7 @@
 
 ## 在开始之前，如有必要，请更改 config.json
 
-# Examples
+# 例子
 <details><summary>FYFLO的HUD</summary>
 	
 ![Ex1](https://i.imgur.com/vazk1hm.jpeg)
@@ -64,7 +64,7 @@
 
 </details>
 
-<details><summary>HUDs assembled</summary>
+<details><summary>组装的HUD</summary>
 
 [https://imgur.com/a/hx55fuz](https://imgur.com/a/hx55fuz)
 
