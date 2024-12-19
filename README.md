@@ -20,7 +20,7 @@
 + 该应用程序添加了通过部分中的按钮管理团队的功能：几局几胜选项和局数胜利卡。.
 还增加了一个使用HUD投票地图的部分.
 
-<details><summary>例如</summary>
+<details><summary>例子</summary>
 
 ![Ex1](https://i.imgur.com/d5aTrEG.png)
 ![Ex2](https://i.imgur.com/eRsTkrZ.png)
@@ -30,7 +30,7 @@
 ## FIX COUCH and NEW to the page CREATE MATCH
 + FIX COUCH [JohnTimmermann](https://github.com/JohnTimmermann)
 + 添加了详细信息，以便地图选择不会干扰到页面创建匹配的BO 1
-<details><summary>例如</summary>
+<details><summary>例子</summary>
 
 ![Ex1](https://i.imgur.com/9c2R9Vh.png)
 
@@ -39,28 +39,28 @@
 ## HUD和雷达文件
 - 如果 RUN_HUD 和 RUN_RADAR 未启动，请下载存档并替换[文件.](https://drive.google.com/file/d/1yXAhl4kY60Tojo8oaQ7UOjq_LHR7GRVW/view?usp=sharing)
 
-Before adding a new package you need to delete the node_modules folder
+在添加新文件时，您需要删除 node_modules 文件夹
 
-## NEW MAP CS2
-+ update Boltobserv v. 1.4
+## CS2新地图
++ 更新Boltobserv 1.4版
 
-## NEW Create match tab
-Update HUDS
+## 新增创建匹配选项卡
+更新HUD
 
-## NEW Create match tab
-+ Map PICK
-+ Match info
+## 新建创建匹配选项卡
++ 地图选择
++ 比赛信息
 
-# IMPORTANT
+# 须知
 
-## Before starting change config.json if necessary
+## 在开始之前，如有必要，请更改 config.json
 
 # Examples
-<details><summary>MY HUD</summary>
+<details><summary>FYFLO的HUD</summary>
 	
 ![Ex1](https://i.imgur.com/vazk1hm.jpeg)
 ![Ex2](https://i.imgur.com/f70vHyB.jpeg)
-- An example of how my HUD works [https://www.youtube.com/watch?v=liKSKBNt224](https://www.youtube.com/watch?v=liKSKBNt224)
+- FYFLO的HUD如何工作的示例(https://www.youtube.com/watch?v=liKSKBNt224)
 
 </details>
 
