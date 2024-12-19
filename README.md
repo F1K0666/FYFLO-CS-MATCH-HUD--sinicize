@@ -20,7 +20,7 @@
 + 该应用程序添加了通过部分中的按钮管理团队的功能：几局几胜选项和局数胜利卡。.
 还增加了一个使用HUD投票地图的部分.
 
-<details><summary>列如</summary>
+<details><summary>例如</summary>
 
 ![Ex1](https://i.imgur.com/d5aTrEG.png)
 ![Ex2](https://i.imgur.com/eRsTkrZ.png)
@@ -29,8 +29,8 @@
 
 ## FIX COUCH and NEW to the page CREATE MATCH
 + FIX COUCH [JohnTimmermann](https://github.com/JohnTimmermann)
-+ Added details so that MAP PICK does not interfere with BO 1 to the page CREATE MATCH
-<details><summary>Example</summary>
++ 添加了详细信息，以便地图选择不会干扰到页面创建匹配的BO 1
+<details><summary>例如</summary>
 
 ![Ex1](https://i.imgur.com/9c2R9Vh.png)
 
