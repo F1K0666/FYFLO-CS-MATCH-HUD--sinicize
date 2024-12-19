@@ -9,18 +9,18 @@
 
 [聊天QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=YOEMEy-Wua8lnaPlQ2O13CHggFL77qTm&jump_from=webapi&authKey=0MIOvc4P6/yWUcHJcu1UfFQDyzFsJPmTfXZSGRbqQavgRNEEdF3d9LZxueHj0U2P)
 
-## Setting for monitors with resolutions greater than 1920 x 1080
-1. Go to the address: `CS2-CSGO-HUDS-Observer-fyflo-main\overlay` and adjust the resolution to yours in the `package.json` file ("width": `specify the width`, "height": `specify the height`).
-2. If the HUD is on the wrong monitor, select it in the taskbar, and press `Win+Shift+Arrow keys` to move it to the correct monitor.
+## 分辨率大于1920 x 1080的显示器设置
+1.请前往以下文件夹地址: `CS2-CSGO-HUDS-Observer-fyflo-main\HUD\overlay` 并在中根据您的需要调整分辨率 `package.json` 文件里 ("width": `设置宽度`, "height": `设置高度`).
+2. 如果HUD显示错误, 在任务栏中选中它, 并且按下 `Win+Shift+方向键` 让其正确显示.
 
-## autodirector
-If autodirector does not work, then type in the console `spec_autodirector 1`
+## 自动导播指令(目前会有BUG，请尝试后使用。)
+请在控制台输入以下指令，要可以把1设置为0 `spec_autodirector 1`
 
-## Application update
-+ Now the application has added the ability to manage teams through buttons in the sections: pick cards and winner cards.
-A section has also been added for working with HUD VOTE maps.
+## 应用程序更新
++ 现在，该应用程序添加了通过部分中的按钮管理团队的功能：几局几胜选项和局数胜利卡。.
+还增加了一个使用HUD投票地图的部分.
 
-<details><summary>Example</summary>
+<details><summary>列入</summary>
 
 ![Ex1](https://i.imgur.com/d5aTrEG.png)
 ![Ex2](https://i.imgur.com/eRsTkrZ.png)
