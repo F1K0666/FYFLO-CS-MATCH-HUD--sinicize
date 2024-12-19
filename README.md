@@ -36,7 +36,7 @@
 
 </details>
 
-## RUN_HUD 和 RUN_RADAR
+## HUD和雷达文件
 - 如果 RUN_HUD 和 RUN_RADAR 未启动，请下载存档并替换[文件.](https://drive.google.com/file/d/1yXAhl4kY60Tojo8oaQ7UOjq_LHR7GRVW/view?usp=sharing)
 
 Before adding a new package you need to delete the node_modules folder
