@@ -1,4 +1,4 @@
-# FYFLO-CS-HUD-sinicize
+# FYFLO-CS-赛事-HUD-汉化
 原作者:fyflo，本项目是CS赛事UI，汉化由F1K0完成。
 
 [原作者twitch](https://www.twitch.tv/fyflo)
