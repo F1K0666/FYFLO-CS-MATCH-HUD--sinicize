@@ -2,8 +2,11 @@
 原作者:github.com/fyflo/CS-CS2-CSGO-HUDS-Observer-fyflo，本项目为汉化
 
 [原作者twitch](https://www.twitch.tv/fyflo)
+
 [汉化作者哔哩哔哩账号](https://discord.com/channels/392006529206976512/1315714438187323524)
+
 [原作者DISCORD](https://discord.com/channels/392006529206976512/1315714438187323524)
+
 [聊天QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=YOEMEy-Wua8lnaPlQ2O13CHggFL77qTm&jump_from=webapi&authKey=0MIOvc4P6/yWUcHJcu1UfFQDyzFsJPmTfXZSGRbqQavgRNEEdF3d9LZxueHj0U2P)
 
 ## Setting for monitors with resolutions greater than 1920 x 1080
