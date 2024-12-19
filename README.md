@@ -70,28 +70,28 @@
 
 </details>
 
-## How does it work?
+## 它是如何工作的？
 
-Basically, CS:GO/CS2 is streaming data to local app-server, that transforms data and then load it to local webpage.
+基本上，CS:GO/CS2将数据传输到本地应用服务器，服务器转换数据，然后将其加载到本地网页。
 
-## To-do before running
+## 使用前需要做的事情
 
-- Node.js needs to be installed
+- 需要安装 Node.js
 ##
-#### CSGO
-- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\ `gamestate_integration_observerspectator.cfg` needs to be placed in cfg folder in CS:GO location
-- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\ `observer.cfg` needs to be placed in cfg folder in CS:GO location
-- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\ `observer_on_map_cs2.cfg` needs to be placed in cfg folder in CS:GO location
+#### CSGO(不确定是否能用)
+- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\ `gamestate_integration_observerspectator.cfg` 需要放在CS:GO位置的cfg文件夹中
+- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\ `observer.cfg` 需要放在CS:GO位置的cfg文件夹中
+- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\ `observer_on_map_cs2.cfg` 需要放在CS:GO位置的cfg文件夹中
 #### CS2
-- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\ `game` \csgo\cfg\ `gamestate_integration_observerspectator.cfg` needs to be placed in cfg folder in CS2 location
-- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\ `game` \csgo\cfg\ `observer.cfg` needs to be placed in cfg folder in CS2 location
-- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\ `game` \csgo\cfg\ `observer_on_map_cs2.cfg` needs to be placed in cfg folder in CS2 location
+- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\ `game` \csgo\cfg\ `gamestate_integration_observerspectator.cfg` 需要放在CS2位置的cfg文件夹中
+- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\ `game` \csgo\cfg\ `observer.cfg` 需要放在CS2位置的cfg文件夹中
+- SteamLibrary\steamapps\common\Counter-Strike Global Offensive\ `game` \csgo\cfg\ `observer_on_map_cs2.cfg` 需要放在CS2位置的cfg文件夹中
 ##
-- CS:GO/CS2 needs to run on Fullscreen Windowed (I know people may dislike it, but since it's only for observation, soo...)
-- After running CS:GO/CS2 and connecting to match (or replaying a demo, you can use this in it too), type to console `exec observer.cfg`/`observer_on_map_cs2`, it makes everything default disappear besides map and killfeed (can use `exec observer_off.cfg`/`exec observer_on_map_cs2` to turn back to normal)
-- Ensure everything in the `config.json` file is filled out
+- CS:GO/CS2 需要全屏窗口运行（我知道人们可能不喜欢它，但因为它只是为了观察，所以......）
+- 在运行CS:GO/CS2并连接到比赛(或DEMO，你也可以在里面用这个)后，控制台输入` exec observer . CFG `/` observer _ on _ map _ CS2 `,它会使除地图和击杀信息之外的所有默认内容消失(可以使用` exec observer _ off . CFG `/` exec observer _ on _ map _ CS2 `恢复正常)
+- 确保填写 `config.json` 文件中的所有内容
 
-## Configuration
+## 配置
 
 ```javascript
 //config.json
