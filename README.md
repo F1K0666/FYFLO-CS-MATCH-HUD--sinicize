@@ -3,7 +3,7 @@
 
 [原作者twitch](https://www.twitch.tv/fyflo)
 
-[汉化作者哔哩哔哩账号](https://discord.com/channels/392006529206976512/1315714438187323524)
+[汉化作者哔哩哔哩账号](https://space.bilibili.com/1244247113)
 
 [原作者DISCORD](https://discord.com/channels/392006529206976512/1315714438187323524)
 
