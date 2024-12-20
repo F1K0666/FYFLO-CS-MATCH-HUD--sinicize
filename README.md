@@ -1,12 +1,12 @@
 # FYFLO-CS-赛事-HUD-汉化
 原作者:fyflo，本项目是CS赛事UI，汉化由F1K0完成。
 
+后面的代码项翻译可能不太准确，如果是会的老登可以去原文看看。
+[原文地址](https://github.com/fyflo/CS-CS2-CSGO-HUDS-Observer-fyflo)
+
 [原作者twitch](https://www.twitch.tv/fyflo)
-
 [汉化作者哔哩哔哩账号](https://space.bilibili.com/1244247113)
-
 [原作者DISCORD](https://discord.com/channels/392006529206976512/1315714438187323524)
-
 [聊天QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=YOEMEy-Wua8lnaPlQ2O13CHggFL77qTm&jump_from=webapi&authKey=0MIOvc4P6/yWUcHJcu1UfFQDyzFsJPmTfXZSGRbqQavgRNEEdF3d9LZxueHj0U2P)
 
 ## 分辨率大于1920 x 1080的显示器设置
@@ -210,23 +210,23 @@ function updatePage(data) {
 
 |方法|描述|例子|返回的对象|
 |---|---|---|---|
-|`getTeamOne()`|关于管理面板中定义的团队1的信息|`var teamOne = data.getTeamOne();`|JSON:`{team_name: "SK Gaming", short_name: "sk", country_code: "Brazil", logo: "logo-1527775279488.png", _id: "MT3xr6mb37o8Vbe3"}`|
-|`getTeamTwo()`|Information about Team 2 defined in Admin Panel|`var players = data.getTeamTwo();`|As above|
-|`loadTeam(id)` id: String |Information about team defined in Admin Panel with given id|`var players = data.loadTeam("MT3xr6mb37o8Vbe3");`|As above|
-|`getMatchType()`|Information which matchup type is this|`var matchup = data.getMatchType();`|String: `bo2`, `bo3` lub `bo5`|
-|`getMatch()`|Information about match set up in panel|`var match = data.getMatch();`|JSON: `{match: "bo5", team_1: {map_score:1, team:"auto"}, team_2: {map_score:1, team:"MT3xr6mb37o8Vbe3"}}`|
-|`getPlayers()`|List of players|`var players = data.getPlayers();`|(Array of Players)|
-|`getCT()`|CT's informations|`var ct = data.getCT();`|(Team)|
-|`getT()`|T's informations|```var t = data.getT();```|(Team)|
-|`getObserved()`|Currently spectated player|```var player = data.getObserved();```|(Player) If you are not spectating anyone, returned Player will have Steam ID 1 and name GOTV|
-|`getPlayer(observer_slot)` observer_slot: Int|Player with given observation slot (o-9)|```var first = data.getPlayer(1);```|(Player)|
-|`phase()`|Game's current phase|```var phase = data.phase();```|(Phase)|
-|`round()`|Round's information|```var round = data.round();```|(Round)|
-|`map()`|Map's information|```var map = data.map();```|(Map)|
-|`previously()`|If anything changed since last update, it will contain the previous value|```var previously = data.previously();```|(Array) More information about `previously()` you will find on the bottom|
+|`getTeamOne()`|关于管理面板中定义的第1一个队伍的信息|`var teamOne = data.getTeamOne();`|JSON:`{team_name: "SK Gaming", short_name: "sk", country_code: "Brazil", logo: "logo-1527775279488.png", _id: "MT3xr6mb37o8Vbe3"}`|
+|`getTeamTwo()`|关于管理面板中定义的第2个队伍的信息|`var players = data.getTeamTwo();`|如上所述|
+|`loadTeam(id)` id: 字符串 |有关在管理员面板中定义的具有给定 ID 的团队的信息|`var players = data.loadTeam("MT3xr6mb37o8Vbe3");`|如上所述|
+|`getMatchType()`|这是哪种比赛类型的信息|`var matchup = data.getMatchType();`|字符串: `bo2`, `bo3` 或 `bo5`|
+|`getMatch()`|有关面板中的比赛设置的信息|`var match = data.getMatch();`|JSON: `{match: "bo5", team_1: {map_score:1, team:"auto"}, team_2: {map_score:1, team:"MT3xr6mb37o8Vbe3"}}`|
+|`getPlayers()`|玩家名单|`var players = data.getPlayers();`|(玩家数组)|
+|`getCT()`|警 CT 的信息|`var ct = data.getCT();`|(队伍)|
+|`getT()`|匪 T 的信息|```var t = data.getT();```|(队伍)|
+|`getObserved()`|当前观看的玩家|```var player = data.getObserved();```|(玩家) 如果你不想见任何人, 返回的玩家将有steamID 1和名字GOTV|
+|`getPlayer(observer_slot)` 具有给定观察槽 （o-9） 的玩家|```var first = data.getPlayer(1);```|(玩家)|
+|`phase()`|游戏的当前阶段|```var phase = data.phase();```|(阶段)|
+|`round()`|回合信息|```var round = data.round();```|(回合)|
+|`map()`|地图信息|```var map = data.map();```|(地图)|
+|`previously()`|如果自上次更新后有任何更改，它将包含以前的值|```var previously = data.previously();```|(阵列)有关的更多信息 `previously()` 你会在底部找到|
 
 
-Example:
+例子:
 ```javascript
 function updatePage(data) {
 	var player = data.getObserved(); // Getting spectated players object
