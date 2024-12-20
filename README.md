@@ -209,8 +209,8 @@ function updatePage(data) {
 
 |方法|描述|例子|返回的对象|
 |---|---|---|---|
-|`getTeamOne()`|关于管理面板中定义的第1一个队伍的信息|`var teamOne = data.getTeamOne();`|JSON:`{team_name: "SK Gaming", short_name: "sk", country_code: "Brazil", logo: "logo-1527775279488.png", _id: "MT3xr6mb37o8Vbe3"}`|
-|`getTeamTwo()`|关于管理面板中定义的第2个队伍的信息|`var players = data.getTeamTwo();`|如上所述|
+|`getTeamOne()`|关于管理面板中定义的第一个队伍的信息|`var teamOne = data.getTeamOne();`|JSON:`{team_name: "SK Gaming", short_name: "sk", country_code: "Brazil", logo: "logo-1527775279488.png", _id: "MT3xr6mb37o8Vbe3"}`|
+|`getTeamTwo()`|关于管理面板中定义的第二个队伍的信息|`var players = data.getTeamTwo();`|如上所述|
 |`loadTeam(id)` id: 字符串 |有关在管理员面板中定义的具有给定 ID 的团队的信息|`var players = data.loadTeam("MT3xr6mb37o8Vbe3");`|如上所述|
 |`getMatchType()`|这是哪种比赛类型的信息|`var matchup = data.getMatchType();`|字符串: `bo2`, `bo3` 或 `bo5`|
 |`getMatch()`|有关面板中的比赛设置的信息|`var match = data.getMatch();`|JSON: `{match: "bo5", team_1: {map_score:1, team:"auto"}, team_2: {map_score:1, team:"MT3xr6mb37o8Vbe3"}}`|
@@ -228,18 +228,18 @@ function updatePage(data) {
 例子:
 ```javascript
 function updatePage(data) {
-	var player = data.getObserved(); // Getting spectated players object
-    var teamLeft = data.getTeamOne(); // Team 1's informations
-    var teamRight = data.getTeamTwo(); // Team 2's informations
+	var player = data.getObserved(); // 当前观看的玩家信息
+    var teamLeft = data.getTeamOne(); // 队伍一的信息
+    var teamRight = data.getTeamTwo(); // 队伍二的信息
     
     var round = data.round();
     
-    // Setting teams' names
+    // 设置队伍名称
     $("#team_one_name").html(teamLeft.team_name); 
     $("#team_two_score").html(teamRight.team_name);
-    // Those might be null if none specified, then use getT() and getCT() 
+    // 如果没有指定，这些可能为 NULL , 然后使用getT()和getCT() 
     
-    //Setting teams' flag
+    //设置队伍国旗
     if(teamLeft.country_code){
         $("#team_1 #team_flag").css("background-image", "url('/files/img/flags/"+teamLeft.country_code + ".png')");
     }
@@ -247,14 +247,14 @@ function updatePage(data) {
         $("#team_2 #team_flag").css("background-image", "url('/files/img/flags/"+teamRight.country_code + ".png')";
     }
     
-    var playerlist = data.getPlayers(); // Array of player objects
+    var playerlist = data.getPlayers(); // 玩家名单
     if(playerlist){
         for(var steamid in playerlist){
-        	/* Actions here will be taken for each player */
+        	/* 这里的操作将针对每个玩家 */
             let player = playerlist[steamid];
             
             let displayed_name = player.name;
-            let real_name = player.real_name; // If real name isn't set, it will show player.name
+            let real_name = player.real_name; // 如果没有设置名字，它将显示玩家游戏名字player.name
         }
     }
     
@@ -262,70 +262,70 @@ function updatePage(data) {
 }
 ```
 
-## Objects
-### Player
+## 对象
+### 玩家
 
-Properties
+性能
 
 
-|Property|Description|Example|Values|
+|Property(不咋会)|描述|例子|值|
 |---|---|---|---|
-|name|Player's steam name|```var name = player.name;//OLOF```|(String)|
-|real_name|Player's real name, if set up in panel|```var real_name = player.name;//Olof Kajbjer Gustafsson```|(String)|
-|clan|Player's current shown clan tag|```var clan = player.clan;//fnatic```|(String) or (NULL)|
-|observer_slot|Player's spectating number|```var slot = player.observer_slot;//3```|(int) 0-9|
-|team|Player's side|```var team = player.team;//CT```|(String) CT/T|
-|position|Player's current position on map|```var pos = player.position;//-663.10, -198.32, 16.03```|(String) x, y, z|
-|steamid|Player's SteamID64|```var sid = player.steamid;//76561197988627193```|(String)|
-|teamData|Player's personal team information, if set up in panel|```var team = player.teamData;```|(JSON):```{team_name: "SK Gaming", short_name: "sk", country_code: "Brazil", logo: "logo-1527775279488.png", _id: "MT3xr6mb37o8Vbe3"}```|
+|name|玩家的 Steam 名称|```var name = player.name;//OLOF```|(字符串)|
+|real_name|玩家的真实姓名，如果在面板中设置的话|```var real_name = player.name;//Olof Kajbjer Gustafsson```|(字符串)|
+|clan|玩家当前显示的氏族标记|```var clan = player.clan;//fnatic```|(字符串) 或者 (NULL)|
+|observer_slot|玩家的号码|```var slot = player.observer_slot;//3```|(整数) 0-9|
+|team|玩家阵营|```var team = player.team;//CT```|(字符串) CT/T|
+|position|玩家在地图上的当前位置|```var pos = player.position;//-663.10, -198.32, 16.03```|(字符串) x, y, z|
+|steamid|玩家的steam64位ID|```var sid = player.steamid;//76561197988627193```|(字符串)|
+|teamData|玩家的个人队伍信息，如果在面板中设置|```var team = player.teamData;```|(JSON):```{team_name: "SK Gaming", short_name: "sk", country_code: "Brazil", logo: "logo-1527775279488.png", _id: "MT3xr6mb37o8Vbe3"}```|
 
-Example:
+例子:
 ```javascript
 function updatePage(data) {
-	var player = data.getObserved(); //Getting spectated players object
-    var name =  player.name; //Getting name of that player
-    var slot = player.observer_slot; // Getting slot of that player
+	var player = data.getObserved(); // 获取观看的玩家对象
+    var name =  player.name; // 得到那个玩家的名字
+    var slot = player.observer_slot; // 得到那个玩家的位置
     
      if(player.team == "CT"){...}
 }
 ```
-Methods
+方法
 
-|Method|Description|Example|Values|
+|方法|描述|例子|值|
 |---|---|---|---|
-|`getWeapons()`|List of player's weapons|```var weapons = player.getWeapons();```|(Array of Weapons)|
-|`getCurrentWeapon()`|Player's active weapon|```var holding = player.getCurrentWeapon();```|(Weapon)|
-|`getGrenades()`|Player's grenades|```var grenades = player.getGrenades();```|(Array of Weapons)|
-|`getStats()`|Player's current statistics (list below)|```var stats = player.getStats();```|(Array)|
+|`getWeapons()`|玩家武器列表|```var weapons = player.getWeapons();```|(武器阵列)|
+|`getCurrentWeapon()`|玩家的主武器|```var holding = player.getCurrentWeapon();```|(武器)|
+|`getGrenades()`|玩家的道具|```var grenades = player.getGrenades();```|(武器阵列)|
+|`getStats()`|玩家当前的统计数据(列表如下)|```var stats = player.getStats();```|(排列)|
 
-Statistics:
+统计:
 
 
 
-|Stat's name|Description|Example|Values|
+|统计名称|描述|例子|值|
 |---|---|---|---|
-|health|Player's health|```var health = player.getStats().health;```|(int) 0-100|
-|armor|Player's kevlar|```var armor = player.getStats().armor;```|(int) 0-100|
-|helmet|Player's helmet|```var helmet = player.getStats().helmet;```|(bool) True/False|
-|defusekit|Player's defuse kit|```var def = player.getStats().defusekit;```|(bool) True/False or (NULL)|
-|smoked|Level of being smoked|```var flashed = player.getStats().smoked;```|(int) 0-255 or (NULL)|
-|flashed|Level of being flashed|```var flashed = player.getStats().flashed;```|(int) 0-255|
-|burning|Level of being burned|```var burning = player.getStats().burning;```|(int) 0-255|
-|money|Player's money|```var money = player.getStats().money;```|(int) From 0 and up|
-|round_kills|Player's kills during round|```var round_kills = player.getStats().round_kills;```|(int) Usually 0-5|
-|round_killhs|Player's kills with headshot during round|```var round_killhs = player.getStats().round_killhs;```|(int) Usually 0-5|
-|equip_value|Value of player's equipment|```var equip_value = player.getStats().equip_value;```|(int) From 0 and up|
-|kills|Player's kills|```var kills = player.getStats().kills;```|(int)|
-|assists|Player's assists|```var assists = player.getStats().assists;```|(int)|
-|deaths|Player's deaths|```var deaths = player.getStats().deaths;```|(int)|
-|mvps|Player's MVPs|```var mvps = player.getStats().mvps;```|(int)|
-|score|Player's point score|```var points = player.getStats().score;```|(int)|
+|health|玩家的血量|```var health = player.getStats().health;```|(整数) 0-100|
+|armor|玩家的护甲|```var armor = player.getStats().armor;```|(整数) 0-100|
+|helmet|玩家的头盔|```var helmet = player.getStats().helmet;```|(bool) True/False|
+|defusekit|玩家的拆弹器|```var def = player.getStats().defusekit;```|(bool) True/False 或 (NULL)|
+|smoked|烟雾程度|```var flashed = player.getStats().smoked;```|(整数) 0-255 或 (NULL)|
+|flashed|被闪程度|```var flashed = player.getStats().flashed;```|(整数) 0-255|
+|burning|烧伤程度|```var burning = player.getStats().burning;```|(整数) 0-255|
+|money|玩家的钱|```var money = player.getStats().money;```|(整数) 从0开始|
+|round_kills|玩家在回合中的击杀数|```var round_kills = player.getStats().round_kills;```|(整数) 通常为 0-5|
+|round_killhs|玩家在回合中爆头击杀|```var round_killhs = player.getStats().round_killhs;```|(整数) 通常为 0-5|
+|equip_value|玩家装备的价值|```var equip_value = player.getStats().equip_value;```|(整数) 从0开始|
+|kills|玩家的击杀数|```var kills = player.getStats().kills;```|(整数)|
+|assists|玩家的助攻数|```var assists = player.getStats().assists;```|(整数)|
+|deaths|玩家的死亡数|```var deaths = player.getStats().deaths;```|(整数)|
+|mvps|玩家的MVP```var mvps = player.getStats().mvps;```|(整数)|
+|score|玩家的分数|```var points = player.getStats().score;```|(整数)|
 
-Example:
+例子:
 
 ```javascript
 function updatePage(data) {
-	var player = data.getObserved(); //Getting spectated players object
+	var player = data.getObserved(); //获取正在观看玩家的数据
     var stats =  player.getStats();
     var weapons = player.getWeapons();
     
@@ -339,51 +339,51 @@ function updatePage(data) {
 }
 ```
 
-### Weapon
-|Property|Description|Example|Values|
+### 武器
+|Property|描述|例子|值|
 |---|---|---|---|
-|name|Weapon's asset name|```var name = weapon.name;//weapon_awp```|(String) weapon\_...|
-|paintkit|Weapon's skin's asset name|```var skin = weapon.paintkit;//cu_medusa_awp```|(String)|
-|type|Weapon's type|```var type = weapon.type;```|(String) Knife/Rifle/SniperRifle/Grenade|
-|state|State of being equiped|```var state = weapon.state;```|(String) holstered/active|
-|ammo_clip|Ammo in clip|```var clip = weapon.ammo_clip;```|(int)|
-|ammo_clip_max|Max ammount of ammo in clip|```var maxclip = weapon.ammo_clip_max;```|(int)|
-|ammo_reserve|Ammo outside of clip|```var res = weapon.ammo_reserve;```|(int)|
+|name|武器的名称|```var name = weapon.name;//weapon_awp```|(字符串) weapon\_...|
+|paintkit|武器皮肤的名称|```var skin = weapon.paintkit;//cu_medusa_awp```|(字符串)|
+|type|武器类型|```var type = weapon.type;```|(字符串) Knife/Rifle/SniperRifle/Grenade|
+|state|装备状态|```var state = weapon.state;```|(字符串) holstered/active|
+|ammo_clip|弹匣中的弹药|```var clip = weapon.ammo_clip;```|(整数)|
+|ammo_clip_max|弹匣中的最大弹药量|```var maxclip = weapon.ammo_clip_max;```|(整数)|
+|ammo_reserve|弹匣外的弹药|```var res = weapon.ammo_reserve;```|(整数)|
 
-### Map
-|Property|Description|Example|Values|
+### 地图
+|Property|描述|例子|值|
 |---|---|---|---|
-|name|Map's name|```var name = map.name;//de_dust2```|(String)|
-|mode|Game's current mode|```var mode = map.mode;//competitive```|(String) competitive/deathmatch/etc...|
-|phase|Game's current phase|```var phase = map.phase;```|(String) warmup/live/intermission/gameover|
-|round|How many rounds has been played, not which is it|```var round = map.round;```|(int) 0-15|
-|num_matches_to_win_series|How many matches needed to win series|```var need = map.num_matches_to_win_series;```|(int)|
-|current_spectators|Number of current live spectators|```var spec = map.current_spectators;```|(int)|
-|souvenirs_total|Number of dropped souvenirs (majors)|```var souv = map.souvenirs_total;```|(int)|
+|name|地图名称|```var name = map.name;//de_dust2```|(String)|
+|mode|当前的游戏模式|```var mode = map.mode;//competitive```|(String) competitive/deathmatch/etc...|
+|phase|当前的游戏阶段|```var phase = map.phase;```|(String) warmup/live/intermission/gameover|
+|round|已经玩了多少回合，而不是哪个|```var round = map.round;```|(int) 0-15|
+|num_matches_to_win_series|赢得系列赛需要多少场比赛|```var need = map.num_matches_to_win_series;```|(int)|
+|current_spectators|当前现场观众人数|```var spec = map.current_spectators;```|(int)|
+|souvenirs_total|掉落的纪念品数量(majors)|```var souv = map.souvenirs_total;```|(int)|
 
-### Round
-|Property|Description|Example|Values|
+### 回合
+|Property|描述|例子|值|
 |---|---|---|---|
-|phase|Round's phase|```var phase = round.phase;```|(String) freezetime/live/over|
-|win_team|Side who's win|```var win_team = round.win_team;```|(String) CT/T|
-|bomb|State of bomb|```var bomb = round.bomb;```|(String) exploded/defused/planted or (NULL)|
+|phase|回合阶段|```var phase = round.phase;```|(字符串) freezetime/live/over|
+|win_team|获胜的一方|```var win_team = round.win_team;```|(字符串) CT/T|
+|bomb|炸弹状态|```var bomb = round.bomb;```|(字符串) exploded/defused/planted 或 (NULL)|
 
-### Team
-|Property|Description|Example|Values|
+### 队伍
+|Property|描述|例子|值|
 |---|---|---|---|
-|score|Team's score|```var score_ct = team.score;```|(int) 0-16 without OTs|
-|name|Team's name|```var name_t = team.name;```|(String)|
-|flag|Team's flag|```var flag_ct = team.flag;```|(String) ISO 3166 Country Code|
-|timeouts_remaining|Team's remaining timeouts|```var timeouts_t = team.timeouts_remaining;```|(int)|
-|matches_won_this_series|Matches won this series by this team|```var won_ct = team.matches_won_this_series;```|(int)|
-|equip_value|Equipment value of team|```var ct_value = team.equip_value;```|(int)|
-|team_money|Sum of  team's players' money|```var ct_money = team.team_money;```|(int)|
+|score|队伍得分|```var score_ct = team.score;```|(整数) 0-16 无 OTs|
+|name|队伍名字|```var name_t = team.name;```|(字符串)|
+|flag|队伍国旗|```var flag_ct = team.flag;```|(字符串) ISO 3166 国家代码|
+|timeouts_remaining|队伍剩余暂停时间|```var timeouts_t = team.timeouts_remaining;```|(整数)|
+|matches_won_this_series|该队伍在本系列赛中获胜的比赛数|```var won_ct = team.matches_won_this_series;```|(整数)|
+|equip_value|团队的设备价值|```var ct_value = team.equip_value;```|(整数)|
+|team_money|队伍玩家的资金总额|```var ct_money = team.team_money;```|(整数)|
 
-### Phase
-|Property|Description|Example|Values|
+### 阶段
+|Property|描述|例子|值|
 |---|---|---|---|
-|phase|Team's score|```var phase = phase.phase;```|(String) freezetime/live/over/bomb/defuse/paused/timeout_t/timeout_ct|
-|phase_ends_in|Team's name|```var time = phase.phase_ends_in;//"8.9"```|(String) Time (seconds) with decimal|
+|phase|队伍的分数|```var phase = phase.phase;```|(String) freezetime/live/over/bomb/defuse/paused/timeout_t/timeout_ct|
+|phase_ends_in|队伍的名称|```var time = phase.phase_ends_in;//"8.9"```|(字符串) 时间 (秒) 带小数的|
 
 ### VETO
 |Property|Description|Example|Values|
