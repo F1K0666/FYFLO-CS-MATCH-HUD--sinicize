@@ -104,7 +104,7 @@
     "DisplayTeamFlags": false, // 在团队回合分数下显示团队国旗
     "DisplayPlayerFlags": true, // 显示玩家国旗（一般在中间的显示台上）
     "DisplayAvatars": false, // 显示头像 true是开，false是关
-    "AvatarDirectory":"./public/files/avatars/", // Local storage for avatars
+    "AvatarDirectory":"./public/files/avatars/", // 头像的本地储存
     "SpecialEvent": "SHOWMATCH", // 如果“创建比赛类型”设置为“NONE”,它将使用此文本-用于其他用途，不要管它
     "LeftImage": "/files/league/miceklogo.png", // 左侧广告栏小图片1（如果HUD有广告栏则会显示）
     "LeftImage2": "/files/league/supearmiceklogo.png", // 左侧广告栏小图片2（如果HUD有广告栏则会显示）
@@ -353,13 +353,13 @@ function updatePage(data) {
 ### 地图
 |Property|描述|例子|值|
 |---|---|---|---|
-|name|地图名称|```var name = map.name;//de_dust2```|(String)|
-|mode|当前的游戏模式|```var mode = map.mode;//competitive```|(String) competitive/deathmatch/etc...|
-|phase|当前的游戏阶段|```var phase = map.phase;```|(String) warmup/live/intermission/gameover|
-|round|已经玩了多少回合，而不是哪个|```var round = map.round;```|(int) 0-15|
-|num_matches_to_win_series|赢得系列赛需要多少场比赛|```var need = map.num_matches_to_win_series;```|(int)|
-|current_spectators|当前现场观众人数|```var spec = map.current_spectators;```|(int)|
-|souvenirs_total|掉落的纪念品数量(majors)|```var souv = map.souvenirs_total;```|(int)|
+|name|地图名称|```var name = map.name;//de_dust2```|字符串)|
+|mode|当前的游戏模式|```var mode = map.mode;//competitive```|(字符串) competitive/deathmatch/etc...|
+|phase|当前的游戏阶段|```var phase = map.phase;```|(字符串) warmup/live/intermission/gameover|
+|round|已经玩了多少回合，而不是哪个|```var round = map.round;```|(整数) 0-15|
+|num_matches_to_win_series|赢得系列赛需要多少场比赛|```var need = map.num_matches_to_win_series;```|(整数)|
+|current_spectators|当前现场观众人数|```var spec = map.current_spectators;```|(整数)|
+|souvenirs_total|掉落的纪念品数量(majors)|```var souv = map.souvenirs_total;```|(整数)|
 
 ### 回合
 |Property|描述|例子|值|
@@ -382,7 +382,7 @@ function updatePage(data) {
 ### 阶段
 |Property|描述|例子|值|
 |---|---|---|---|
-|phase|队伍的分数|```var phase = phase.phase;```|(String) freezetime/live/over/bomb/defuse/paused/timeout_t/timeout_ct|
+|phase|队伍的分数|```var phase = phase.phase;```|(字符串) freezetime/live/over/bomb/defuse/paused/timeout_t/timeout_ct|
 |phase_ends_in|队伍的名称|```var time = phase.phase_ends_in;//"8.9"```|(字符串) 带小数点的时间 (秒)|
 
 ### 否决权
@@ -437,13 +437,13 @@ function updatePage(data) {
 |`/api/huds`|获取||`{players: [Array of HUD objects with unique _id property]}` 或者 `Status 500`|
 |`/api/huds`|发布|`{id: String, enabled: Boolean}`|状态 `200` 或者 `500`|
 
-## Credits
+## 信用
 
-- [osztenkurden](https://github.com/osztenkurden) - Original Repo Creator [link](https://github.com/osztenkurden/Custom-CSGO-HUD)
-- [boldgolt](https://github.com/boltgolt) - Radar on hud [link](https://github.com/boltgolt/boltobserv)
-- As I mentioned before, [RedSparr0w](https://github.com/RedSparr0w) is the man I wouldn't make it without.
-- [Bre3n](https://github.com/Bre3n) - No original Overlay CSGO HUD [link](https://github.com/Bre3n/CSGO)
-- [JohnTimmermann](https://github.com/JohnTimmermann) - Fix Couch [link](https://github.com/JohnTimmermann/Custom-CS2-HUD)
+- [osztenkurden](https://github.com/osztenkurden) - 原始 Repo 创建者 [链接](https://github.com/osztenkurden/Custom-CSGO-HUD)
+- [boldgolt](https://github.com/boltgolt) - HUD的雷达 [链接](https://github.com/boltgolt/boltobserv)
+- 正如我之前提到的, [RedSparr0w](https://github.com/RedSparr0w) 是我离不开的人.
+- [Bre3n](https://github.com/Bre3n) - 没有原始的 Overlay CSGO HUD [链接](https://github.com/Bre3n/CSGO)
+- [JohnTimmermann](https://github.com/JohnTimmermann) - 修复 Couch [链接](https://github.com/JohnTimmermann/Custom-CS2-HUD)
 
 
 ## 许可证
