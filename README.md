@@ -186,25 +186,25 @@
 
 ![Ex5](https://i.imgur.com/cyg5Ws4.png)
 
-## How to create your own HUD
-Go to `public/huds` and copy and paste `default` folder and rename it to your heart's content - that's how your HUD will display in Admin Panel.
-`template.pug` - template of your HUD in PUG, required.
-`style.css` - css to your template, reccomended.
-`index.js` - engine of your HUD. Look at the default one and at the template to get the idea how it works.
+## 如何创建自己的HUD
+进到 `public/huds` 复制粘贴 `default` 文件夹，并重新命名为你的心的内容-这就是你的HUD将如何显示在管理面板。
+`template.pug` - template是用PUG编写文件，用来管理HUD模型的, 重要的。
+`style.css` - style是用css编写文件，用来管理HUD模型大小和数据的的, 推荐的。
+`index.js` - HUD的运行引擎。看看默认的和模板，了解它是如何工作的。
 
-In `index.js` the most important part is `updatePage()` function. It is required for any HUD to work, because this function is called when data is coming from CS:GO. 
+在 `index.js` 中最重要的部分是 `updatePage()` 函数。任何HUD都需要它来工作，因为当数据来自CS:GO时会调用这个函数。
 
-All of main action that will take place on your screen happens in `updatePage()` function, so when you want to represent some information you will need to write your code within its boundaries.
+屏幕上发生的所有主要动作都发生在“updatePage()”函数中，所以当你想表示一些信息时，你需要在它的边界内编写代码。
 ```javascript
 function updatePage(data) {
 	//Here happens magic
 }
 ```
-`data` argument is being passed to it, and from that we can take actions, such as getting informations about players, map, round phases, etc. Below you will find detailed information about received information :>
+`data` 参数被传递给它，从那里我们可以采取行动，例如获取玩家、地图、回合等信息。您将在下面找到有关接收信息的详细信息:>
 
 ### `data`
 
-Methods to obtain different objects:
+获取不同对象的方法:
 
 
 
