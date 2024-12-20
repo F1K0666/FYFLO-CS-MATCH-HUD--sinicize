@@ -208,9 +208,9 @@ function updatePage(data) {
 
 
 
-|Method|Description|Example|Returned objects|
+|方法|描述|例子|返回的对象|
 |---|---|---|---|
-|`getTeamOne()`|Information about Team 1 defined in Admin Panel|`var teamOne = data.getTeamOne();`|JSON:`{team_name: "SK Gaming", short_name: "sk", country_code: "Brazil", logo: "logo-1527775279488.png", _id: "MT3xr6mb37o8Vbe3"}`|
+|`getTeamOne()`|关于管理面板中定义的团队1的信息|`var teamOne = data.getTeamOne();`|JSON:`{team_name: "SK Gaming", short_name: "sk", country_code: "Brazil", logo: "logo-1527775279488.png", _id: "MT3xr6mb37o8Vbe3"}`|
 |`getTeamTwo()`|Information about Team 2 defined in Admin Panel|`var players = data.getTeamTwo();`|As above|
 |`loadTeam(id)` id: String |Information about team defined in Admin Panel with given id|`var players = data.loadTeam("MT3xr6mb37o8Vbe3");`|As above|
 |`getMatchType()`|Information which matchup type is this|`var matchup = data.getMatchType();`|String: `bo2`, `bo3` lub `bo5`|
