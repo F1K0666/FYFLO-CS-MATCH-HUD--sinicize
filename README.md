@@ -383,20 +383,20 @@ function updatePage(data) {
 |Property|描述|例子|值|
 |---|---|---|---|
 |phase|队伍的分数|```var phase = phase.phase;```|(String) freezetime/live/over/bomb/defuse/paused/timeout_t/timeout_ct|
-|phase_ends_in|队伍的名称|```var time = phase.phase_ends_in;//"8.9"```|(字符串) 时间 (秒) 带小数的|
+|phase_ends_in|队伍的名称|```var time = phase.phase_ends_in;//"8.9"```|(字符串) 带小数点的时间 (秒)|
 
-### VETO
-|Property|Description|Example|Values|
+### 否决权
+|Property|描述|例子|值|
 |---|---|---|---|
-|teams.team_3.logo|LOGO team 1 Map Veto||(String) team 1|
-|teams.team_4.logo|LOGO team 2 Map Veto||(String) team 2|
+|teams.team_3.logo|LOGO 队伍一 地图否决权||(字符串) team 1|
+|teams.team_4.logo|LOGO 队伍二 地图否决权||(字符串) team 2|
 ........
-|match.map.score_map_1|score 1 Map Veto||(int) 0-100|
-|match.map.score_map_2|score 2 Map Veto||(int) 0-100|
+|match.map.score_map_1|分数一 地图否决权||(整数) 0-100|
+|match.map.score_map_2|分数二 地图否决权||(整数) 0-100|
 ........
 
-# API Requests to databases
-### Player object example
+# 对数据库的API请求
+### 玩家对象例子
 ```json
 {
     "sid":"76561198029090368",
@@ -406,7 +406,7 @@ function updatePage(data) {
     "team":"MT3xr6mb37o8Vbe3"
 }
 ```
-### Team object example
+### 队伍对象例子
 ```json
 {
     "team_name":"SK Gaming",
@@ -415,7 +415,7 @@ function updatePage(data) {
     "logo":"logo-1527775279488.png"
 }
 ```
-### HUD object example
+### HUD对象例子
 ```json
 {
     "name":"default",
@@ -423,19 +423,19 @@ function updatePage(data) {
 }
 ```
 
-|URL|Method|Request body|Response|
+|网址|方法|请求正文|响应|
 |---|--|--|---|
-|`/api/players`|GET||`{players:[Array of Player objects with unique _id property]}` or `Status 500`|
-|`/api/players`|POST|`Player object`| `{id:String}`, specifying new unique _id or Status `500`|
-|`/api/players`|PATCH|`Player object with _id property`|Status `200` or `500`|
-|`/api/players`|DELETE|`{userId: String}`|Status `200` or `500`|
-|`/api/teams`|GET||`{players: [Array of Player objects with unique _id property]}` or `Status 500`|
-|`/api/teams`|POST|`FormData` object with fields: team_name, short_name, country_code, logo| `{id:String}`, specifying new unique _id or Status `500`|
-|`/api/teams`|PATCH|`FormData` object with fields: team_name, short_name, country_code, logo|Status `200` or `500`|
-|`/api/teams`|DELETE|`{teamId: String}`|Status `200` or `500`|
-|`/api/teams_logo`|DELETE|`{teamId: String}`|Status `200` or `500`|
-|`/api/huds`|GET||`{players: [Array of HUD objects with unique _id property]}` or `Status 500`|
-|`/api/huds`|POST|`{id: String, enabled: Boolean}`| Status `200` or `500`|
+|`/api/players`|获取||`{players:[Array of Player objects with unique _id property]}` 或者 `Status 500`|
+|`/api/players`|发布|`Player object`| `{id:String}`, 指定新的唯一 _id或者状态 `500`|
+|`/api/players`|补丁|`Player object with _id property`|状态 `200` 或者 `500`|
+|`/api/players`|删除|`{userId: String}`|状态 `200` 或者 `500`|
+|`/api/teams`|获取||`{players: [Array of Player objects with unique _id property]}` 或者 `Status 500`|
+|`/api/teams`|发布|`FormData` 包含字段的对象: team_name, short_name, country_code, logo| `{id:String}`, 指定新的唯一 _id或者状态 `500`|
+|`/api/teams`|补丁|`FormData` 包含字段的对象: team_name, short_name, country_code, logo|状态 `200` 或者 `500`|
+|`/api/teams`|删除|`{teamId: String}`|状态 `200` 或者 `500`|
+|`/api/teams_logo`|删除|`{teamId: String}`|状态 `200` 或者 `500`|
+|`/api/huds`|获取||`{players: [Array of HUD objects with unique _id property]}` 或者 `Status 500`|
+|`/api/huds`|发布|`{id: String, enabled: Boolean}`|状态 `200` 或者 `500`|
 
 ## Credits
 
@@ -446,12 +446,12 @@ function updatePage(data) {
 - [JohnTimmermann](https://github.com/JohnTimmermann) - Fix Couch [link](https://github.com/JohnTimmermann/Custom-CS2-HUD)
 
 
-## License
+## 许可证
 
-This project is Licensed under GPL-3. Any changesd to this project need to be made open source (among other things). Distribution is allowed, but must be open (not closed or behind paywall).
+这个项目是根据GPL-3许可的。对这个项目的任何改变都需要开源(除其他外)。允许分发，但必须是开放的(不是封闭的或者付费的)。
 
-The section above is not legal advice and is not legally binding. See the LICENSE file in the repository for the full license.
+以上部分不是法律建议，不具有法律约束力。请查看存储库中的许可证文件以获得完整的许可证。
 
-## My HUD
+## FYFLO HUD
 
-On the issue of purchasing my HUD, you need to write to my mail. fyflostream@yandex.ru. Only for Russian Federation.
+关于购买FYFLO的HUD的问题，你需要发邮件给FYFLO。fyflostream@yandex.ru。FYFLO只会接俄罗斯联邦的HUD定制。
