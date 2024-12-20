@@ -154,7 +154,7 @@
 
 ## UI后台面板
 
-启动文件后，转到终端/命令提示符中显示的地址。你应该看到管理面板分为三个部分-队伍，玩家，比赛和hud。在这里您可以管理比赛中 HUD 的信息。
+启动文件后，转到终端/命令提示符中显示的地址。你应该看到管理面板分为三个部分-队伍，玩家，创建比赛和hud。在这里您可以管理比赛中 HUD 的信息。
 
 #### 队伍面板
 
@@ -166,23 +166,23 @@
 在玩家标签中，你可以定义玩家的真实姓名，显示姓名，国旗(也可以设置为“与队伍相同”)，他们的队伍以及识别玩家 steam 64位ID. 玩家头像的文件保存在`public/storage/` 其文件名应从 `avatar-`.
 ![Ex2](https://i.imgur.com/tiDnUPj.png)
 
-#### Create match tab
+#### 创建比赛面板
 
-Here you can set type of match - is this a map of NONE, BO1, BO3 or BO5, score for teams and which team it should load to HUD. In case players are on the wrong side (left/right) there is `SWAP` button to quickly tell the HUD to swap teams' name, logo and flag.
-Additionaly, if during the match you decide that there is a type in team's or player's information, you can change it (for example on mobile phone, if you allow Node through firewall and you are on the same local network) and then in this tab click the `Force Refresh HUD`, to make sure all the changes are applied.
+在这里你可以设置比赛的类型--这是一个NONE，BO1，BO3或BO5的选项卡，队伍的得分以及哪个队应该应用在HUD。如果队名放反了，下面有一个 `反转队伍信息` 按钮，点击后可以快速翻转队名，以便恢复正确。
+此外，如果在比赛期间，您想改变队伍或玩家信息，你可以改变它(例如在手机上，如果您允许通过防火墙的节点，您是在同一个局域网)，然后在这个标签点击 `强制刷新HUD`, 以确保应用所有更改。
 
 ![Ex3](https://i.imgur.com/61l8zd7.png)
 
 ### HUDS
 
-This tab shows local HUDs. They are not validated whether or not they actually work, but if any of the files is missing, it will notify you in Warnings column.
-You can enable/disable each HUD to make it accessible or not. There is also HUD URL information - if you click it, it will redirect you to local webpage, that's serving as a HUD. It is useful if streamer wants to stream HUD separately - for example it can be added in OBS as Browser Source, then you just need to set it to HUD's URL.
-It might be useful for bigger streaming workspaces, like for setups with different PC dedicated to replays - one server app will manage every HUD on local network, because all HUDs are available all the time, if they are not disabled.
+此标签显示本地HUD。它们不会被验证是否能用，但是如果有任何文件丢失，它会在警告栏中通知你。
+您可以创建或删除每个HUD以使其能不能访问。还有HUD链接信息-如果你点击它，它会将您重新跳转到本地网页，即用作HUD。如果主播想要单独HUD界面，这很有用的——例如 它可以作为浏览器源添加到OBS中，然后你只需要将其设置为HUD的URL。
+这对于更大的流媒体工作空间可能很有用，例如对于具有不同PC的专门用于重放的设置-一个服务器应用程序将管理本地网络上的每个HUD，因为所有HUD都是可用的，如果它们没有被禁用的话。
 ![Ex4](https://i.imgur.com/HbdH4Ia.png)
 
-### LIVE PAGE
+### 活动页面
 
-In this tab you can easily show/hide scoreboard and radar border while HUD running
+在这个标签中，您可以在HUD运行时显示/隐藏记分板和雷达边框
 
 ![Ex5](https://i.imgur.com/cyg5Ws4.png)
 
