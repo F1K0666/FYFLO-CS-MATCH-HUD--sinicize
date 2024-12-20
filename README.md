@@ -1,8 +1,7 @@
 # FYFLO-CS-赛事-HUD-汉化
 原作者:fyflo，本项目是CS赛事UI，汉化由F1K0完成。
 
-后面的代码项翻译可能不太准确，如果是会的老登可以去原文看看。
-[原文地址](https://github.com/fyflo/CS-CS2-CSGO-HUDS-Observer-fyflo)
+后面的代码项翻译可能不太准确，如果会的老登可以去[原文](https://github.com/fyflo/CS-CS2-CSGO-HUDS-Observer-fyflo)看看。
 
 [原作者twitch](https://www.twitch.tv/fyflo)
 [汉化作者哔哩哔哩账号](https://space.bilibili.com/1244247113)
