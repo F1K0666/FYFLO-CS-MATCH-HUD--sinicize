@@ -27,8 +27,8 @@
 
 </details>
 
-## FIX COUCH and NEW to the page CREATE MATCH
-+ FIX COUCH [JohnTimmermann](https://github.com/JohnTimmermann)
+## 修复COUCH和新的创建比赛页面
++ 修复 COUCH [JohnTimmermann](https://github.com/JohnTimmermann)
 + 添加了详细信息，以便地图选择不会干扰到页面创建匹配的BO 1
 <details><summary>例子</summary>
 
@@ -96,40 +96,40 @@
 ```javascript
 //config.json
 {
-    "GameStateIntegrationPort":1337, //This must be the same as in gamestate_integration_observerspectator.cfg,
-    "ServerPort":2626, //Some free port on your PC
-    "SteamApiKey":"ABCDEFGIJK12345678", //Steam API Key, without it avatars won't work
-    "PrintPlayerData": false, // Useful for seeing steamid of players in the game to add to players database
-    "DisplayAvatars": true, // Display Obs Avatars
-    "DisplayPlayerAvatars": false, // Display custom set player avatars from the players database
-    "DisplayTeamFlags": false, // Display team flags under the team rounds score
-    "DisplayPlayerFlags": true, // Display players flag on the observed player section
-    "DisplayAvatars": false, // true for yes, false for no
+    "GameStateIntegrationPort":1337, //这必须和gamestate_integration_observerspectator.cfg文件中相同,
+    "ServerPort":2626, //你电脑上的空闲端口
+    "SteamApiKey":"ABCDEFGIJK12345678", //Steam API密钥，没有它头像就不能工作
+    "PrintPlayerData": false, // 用于查看游戏中玩家的STEAM ID以添加到玩家后台
+    "DisplayAvatars": true, // 显示Obs头像
+    "DisplayPlayerAvatars": false, // 显示玩家后台中自定义的玩家头像
+    "DisplayTeamFlags": false, // 在团队回合分数下显示团队国旗
+    "DisplayPlayerFlags": true, // 显示玩家国旗（一般在中间的显示台上）
+    "DisplayAvatars": false, // 显示头像 true是开，false是关
     "AvatarDirectory":"./public/files/avatars/", // Local storage for avatars
-    "SpecialEvent": "SHOWMATCH", // If create match type is set to NONE, it will use this text - used for something else, just leave alone
-    "LeftImage": "/files/league/miceklogo.png", // Left Section Image
-    "LeftImage2": "/files/league/supearmiceklogo.png", // Left Section Image
-    "LeftImage3": "/files/league/turniej_logo.png", // Left Section Image
+    "SpecialEvent": "SHOWMATCH", // 如果“创建比赛类型”设置为“NONE”,它将使用此文本-用于其他用途，不要管它
+    "LeftImage": "/files/league/miceklogo.png", // 左侧广告栏小图片1（如果HUD有广告栏则会显示）
+    "LeftImage2": "/files/league/supearmiceklogo.png", // 左侧广告栏小图片2（如果HUD有广告栏则会显示）
+    "LeftImage3": "/files/league/turniej_logo.png", // 左侧广告栏小图片3（如果HUD有广告栏则会显示）
     
-    "LeftOneImage": "/files/league/turniej_logo_kopia.png", // Left section, one big image for the entire container
-    "DisplayOnlyMainImage": false, // Check this to display only one big image instead 3 smaller
-    "_onlyComment": " this image ^^^ (LeftOneImage) should be 405px x 85px ",
+    "LeftOneImage": "/files/league/turniej_logo_kopia.png", // 左侧广告栏最大图片，铺满整个广告栏（如果HUD有广告栏则会显示）
+    "DisplayOnlyMainImage": false, // 打开此项将只显示一个大图片，而不是3个小图片
+    "_onlyComment": " 这个图片 ^^^ (LeftOneImage) 应该是 405px x 85px ",
     
-    "DisplayScoreboard": true, // Scoreboard appears at the end of the round (once in 4 rounds)
-    "DisplayRadar": true, // Show radar border (if RUN_RADAR didnt work)
+    "DisplayScoreboard": true, // 记分牌出现在回合结束时(每4回合一次)
+    "DisplayRadar": true, // 显示雷达 (如果RUN_RADAR不起作用)
     
-    "LeftPrimary": "Left Primary Text", // left Section Top Words
-    "LeftSecondary": "Left Secondary Text", // Left Section Bottom Words
-    "RightImage": "/files/img/elements/icon_microphone.png", // Right Section Image
-    "RightPrimary": "Right Primary Text", // Right Section Top Words
-    "RightSecondary": "Right Secondary Text", // Right Section Bottom Words
+    "LeftPrimary": "Left Primary Text", // 左侧广告栏顶部文字
+    "LeftSecondary": "Left Secondary Text", // 左侧广告栏底部文字
+    "RightImage": "/files/img/elements/icon_microphone.png", // 右侧广告栏图片
+    "RightPrimary": "Right Primary Text", // 右侧广告栏顶部文字
+    "RightSecondary": "Right Secondary Text", // 右侧广告栏底部文字
 }
 ```
 
 ## 怎么让它跑起来？
 
 - 安装 NodeJS v20.18.0 (nodejs.org)
-- Download this repo somewhere
+- 在某个地方下载 repo
 ##
 - 
 打开 CS2_HUD_fyflo.exe##
@@ -140,30 +140,30 @@
 ```javascript
 //config.json
     {
-        "port": 2626 // same port as ServerPort as stated in the 'big' config.json file above
+        "port": 2626 // 与上面的 config.json 文件中的 电脑空闲端口 相同
     }
 ```
 
-## How to make it work with OBS?
-- In your OBS create a new scene
-- In scene, click on plus button and add window capture and choose csgo.exe
-- Add browser and in url copy and paste your CS-GO/CS2 link
-- Add second browser and paste url for radar (it should look like this)
+## 如何让它和OBS一起工作？
+- 在您的OBS里创建一个新的场景
+- 在场景中，点击加号按钮，添加窗口捕捉，并选择cs2.exe
+- 添加浏览器，在url中复制并粘贴您CS UI链接
+- 添加第二个浏览器并粘贴雷达的网址(有的UI自带雷达，有的没有所以需要手动放下)
 ![Ex5](https://i.imgur.com/TsxNBgP.png)
 ![Ex6](https://i.imgur.com/aqxAHXH.png)
 
-## Admin Panel
+## UI后台面板
 
-After starting the code go to address showing up in terminal/command prompt. You should see Admin Panel divided in three parts - Teams, Players, Create Match and HUDs. In here you can manage data used in HUDs during match ups.
+启动文件后，转到终端/命令提示符中显示的地址。你应该看到管理面板分为三个部分-队伍，玩家，比赛和hud。在这里您可以管理比赛中 HUD 的信息。
 
-#### Teams tab
+#### 队伍面板
 
-You can here define teams, their name, short names (actually short names are not use anywhere for now), their country flag and logo. Files for teams' logos are being held in `public/storage/` and their filename should start from `logo-`.
+您可以在这里定义队伍，队名，队名简称(但简称实际上是不在任何地方用的)，队伍的国旗和头像。队伍头像的文件保存在 `public/storage/` 其文件名应从 `logo-`.
 ![Ex1](https://i.imgur.com/7HPOrB0.png)
 
-#### Players tab
+#### 玩家面板
 
-In Players tab you can define player's real name, displayed name, country flag (can also be set to "The same as team"), their team and, to identify players, SteamID64. Files for players' avatars are being held in `public/storage/` and their filename should start from `avatar-`.
+在玩家标签中，你可以定义玩家的真实姓名，显示姓名，国旗(也可以设置为“与队伍相同”)，他们的队伍以及识别玩家 steam 64位ID. 玩家头像的文件保存在`public/storage/` 其文件名应从 `avatar-`.
 ![Ex2](https://i.imgur.com/tiDnUPj.png)
 
 #### Create match tab
