@@ -5,7 +5,7 @@
 
 [原作者twitch](https://www.twitch.tv/fyflo)
 [汉化作者哔哩哔哩账号](https://space.bilibili.com/1244247113)
-[原作者DISCORD](https://discord.com/channels/392006529206976512/1315714438187323524)
+[原作者聊天群DISCORD](https://discord.gg/eAmhtW6Rfz)
 [聊天QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=YOEMEy-Wua8lnaPlQ2O13CHggFL77qTm&jump_from=webapi&authKey=0MIOvc4P6/yWUcHJcu1UfFQDyzFsJPmTfXZSGRbqQavgRNEEdF3d9LZxueHj0U2P)
 
 ## 分辨率大于1920 x 1080的显示器设置
