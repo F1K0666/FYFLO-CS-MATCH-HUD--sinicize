@@ -21,8 +21,7 @@
 
 <details><summary>例子</summary>
 
-![Ex1](https://i.imgur.com/d5aTrEG.png)
-![Ex2](https://i.imgur.com/eRsTkrZ.png)
+![Ex1](https://img520.com/ffldOy.png)
 
 </details>
 
