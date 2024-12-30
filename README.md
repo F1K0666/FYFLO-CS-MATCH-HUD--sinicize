@@ -5,6 +5,7 @@
 
 [原作者twitch](https://www.twitch.tv/fyflo)
 [汉化作者哔哩哔哩账号](https://space.bilibili.com/1244247113)
+[详细视频操作视频;角落里的阳光_](https://www.bilibili.com/video/BV1Fp421m7mU/)
 [原作者聊天群DISCORD](https://discord.gg/eAmhtW6Rfz)
 [聊天QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=YOEMEy-Wua8lnaPlQ2O13CHggFL77qTm&jump_from=webapi&authKey=0MIOvc4P6/yWUcHJcu1UfFQDyzFsJPmTfXZSGRbqQavgRNEEdF3d9LZxueHj0U2P)
 
