@@ -8,13 +8,10 @@
 [原作者DISCORD](https://discord.com/channels/392006529206976512/1315714438187323524)
 [聊天QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=YOEMEy-Wua8lnaPlQ2O13CHggFL77qTm&jump_from=webapi&authKey=0MIOvc4P6/yWUcHJcu1UfFQDyzFsJPmTfXZSGRbqQavgRNEEdF3d9LZxueHj0U2P)
 
-## If animation does not work for you
-
-Start the file overlay_v2.exe
-
-Step 1: Open the Start menu and click the gear icon to open Settings. Alternatively, you can press Win + I key to quickly launch the Settings app.
-
-Step 2: Navigate to the Accessibility > Visual effects option, and toggle the button to On (default) or Off to turn on or off Animation effects.
+## 如果动画不适合你
+启动overlay_v2.exe文件
+第一步:打开开始菜单，点击齿轮图标打开设置。或者也可以按 Win+I 键快速启动设置。
+第二步:导航到“辅助功能”>“视觉效果”选项，将按钮切换到“开”(默认)或“关”,以打开或关闭动画效果。
 
 ## 分辨率大于1920 x 1080的显示器设置
 1.请前往以下文件夹地址: `CS2-CSGO-HUDS-Observer-fyflo-main\HUD\overlay` 中的 `package.json` 文件里根据您的需要调整分辨里 ("width": `设置宽度`, "height": `设置高度`).
