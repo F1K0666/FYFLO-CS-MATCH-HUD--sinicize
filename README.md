@@ -5,9 +5,16 @@
 
 [原作者twitch](https://www.twitch.tv/fyflo)
 [汉化作者哔哩哔哩账号](https://space.bilibili.com/1244247113)
-[详细操作视频;角落里的阳光_](https://www.bilibili.com/video/BV1Fp421m7mU/)
-[原作者聊天群DISCORD](https://discord.gg/eAmhtW6Rfz)
+[原作者DISCORD](https://discord.com/channels/392006529206976512/1315714438187323524)
 [聊天QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=YOEMEy-Wua8lnaPlQ2O13CHggFL77qTm&jump_from=webapi&authKey=0MIOvc4P6/yWUcHJcu1UfFQDyzFsJPmTfXZSGRbqQavgRNEEdF3d9LZxueHj0U2P)
+
+## If animation does not work for you
+
+Start the file overlay_v2.exe
+
+Step 1: Open the Start menu and click the gear icon to open Settings. Alternatively, you can press Win + I key to quickly launch the Settings app.
+
+Step 2: Navigate to the Accessibility > Visual effects option, and toggle the button to On (default) or Off to turn on or off Animation effects.
 
 ## 分辨率大于1920 x 1080的显示器设置
 1.请前往以下文件夹地址: `CS2-CSGO-HUDS-Observer-fyflo-main\HUD\overlay` 中的 `package.json` 文件里根据您的需要调整分辨里 ("width": `设置宽度`, "height": `设置高度`).
@@ -22,7 +29,8 @@
 
 <details><summary>例子</summary>
 
-![Ex1](https://img520.com/ffldOy.png)
+![Ex1](https://i.imgur.com/d5aTrEG.png)
+![Ex2](https://i.imgur.com/eRsTkrZ.png)
 
 </details>
 
@@ -31,7 +39,7 @@
 + 添加了详细信息，以便地图选择不会干扰到页面创建匹配的BO 1
 <details><summary>例子</summary>
 
-![Ex1](https://img520.com/yCqzS2.png)
+![Ex1](https://i.imgur.com/9c2R9Vh.png)
 
 </details>
 
@@ -104,7 +112,7 @@
     "DisplayTeamFlags": false, // 在团队回合分数下显示团队国旗
     "DisplayPlayerFlags": true, // 显示玩家国旗（一般在中间的显示台上）
     "DisplayAvatars": false, // 显示头像 true是开，false是关
-    "AvatarDirectory":"./public/files/avatars/", // 头像的本地储存
+    "AvatarDirectory":"./public/files/avatars/", // Local storage for avatars
     "SpecialEvent": "SHOWMATCH", // 如果“创建比赛类型”设置为“NONE”,它将使用此文本-用于其他用途，不要管它
     "LeftImage": "/files/league/miceklogo.png", // 左侧广告栏小图片1（如果HUD有广告栏则会显示）
     "LeftImage2": "/files/league/supearmiceklogo.png", // 左侧广告栏小图片2（如果HUD有广告栏则会显示）
@@ -132,7 +140,7 @@
 ##
 - 
 打开 CS2_HUD_fyflo.exe##
-- 然后运行 `CS赛事UI汉化版\屏幕覆盖UI\hud窗口` 目录下的 `overlay.exe` 文件，只能窗口模式使用或只是去你的浏览器 (http://你的 IP:2626)
+- 然后运行OVERLAY.exe: [OVERLAY 下载](https://drive.google.com/file/d/1_NoHJRfSVFF8yTp8hXabf9Du76mowhPD/view?usp=drive_link) (放置在文件夹CS-CS2-CSGO-HUDS-Observer-fyflo)或只是去你的浏览器 (http://你的 IP:2626)
 - 确保在Overlay exe文件夹中，有一个包含以下内容的config.json文件:
 - 雷达将在 :36364 端口 (http://localhost:36364)
 
@@ -158,32 +166,32 @@
 #### 队伍面板
 
 您可以在这里定义队伍，队名，队名简称(但简称实际上是不在任何地方用的)，队伍的国旗和头像。队伍头像的文件保存在 `public/storage/` 其文件名应从 `logo-`.
-![Ex1](https://img520.com/oBSOD7.png)
+![Ex1](https://i.imgur.com/7HPOrB0.png)
 
 #### 玩家面板
 
 在玩家标签中，你可以定义玩家的真实姓名，显示姓名，国旗(也可以设置为“与队伍相同”)，他们的队伍以及识别玩家 steam 64位ID. 玩家头像的文件保存在`public/storage/` 其文件名应从 `avatar-`.
-![Ex2](https://img520.com/ssxYMP.png)
+![Ex2](https://i.imgur.com/tiDnUPj.png)
 
 #### 创建比赛面板
 
 在这里你可以设置比赛的类型--这是一个NONE，BO1，BO3或BO5的选项卡，队伍的得分以及哪个队应该应用在HUD。如果队名放反了，下面有一个 `反转队伍信息` 按钮，点击后可以快速翻转队名，以便恢复正确。
 此外，如果在比赛期间，您想改变队伍或玩家信息，你可以改变它(例如在手机上，如果您允许通过防火墙的节点，您是在同一个局域网)，然后在这个标签点击 `强制刷新HUD`, 以确保应用所有更改。
 
-![Ex3](https://img520.com/yCqzS2.png)
+![Ex3](https://i.imgur.com/61l8zd7.png)
 
 ### HUDS
 
 此标签显示本地HUD。它们不会被验证是否能用，但是如果有任何文件丢失，它会在警告栏中通知你。
 您可以创建或删除每个HUD以使其能不能访问。还有HUD链接信息-如果你点击它，它会将您重新跳转到本地网页，即用作HUD。如果主播想要单独HUD界面，这很有用的——例如 它可以作为浏览器源添加到OBS中，然后你只需要将其设置为HUD的URL。
 这对于更大的流媒体工作空间可能很有用，例如对于具有不同PC的专门用于重放的设置-一个服务器应用程序将管理本地网络上的每个HUD，因为所有HUD都是可用的，如果它们没有被禁用的话。
-![Ex4](https://img520.com/sDTGJV.png)
+![Ex4](https://i.imgur.com/HbdH4Ia.png)
 
 ### 活动页面
 
 在这个标签中，您可以在HUD运行时显示/隐藏记分板和雷达边框
 
-![Ex5](https://img520.com/TNRCfG.png)
+![Ex5](https://i.imgur.com/cyg5Ws4.png)
 
 ## 如何创建自己的HUD
 进到 `public/huds` 复制粘贴 `default` 文件夹，并重新命名为你的心的内容-这就是你的HUD将如何显示在管理面板。
@@ -353,13 +361,13 @@ function updatePage(data) {
 ### 地图
 |Property|描述|例子|值|
 |---|---|---|---|
-|name|地图名称|```var name = map.name;//de_dust2```|字符串)|
-|mode|当前的游戏模式|```var mode = map.mode;//competitive```|(字符串) competitive/deathmatch/etc...|
-|phase|当前的游戏阶段|```var phase = map.phase;```|(字符串) warmup/live/intermission/gameover|
-|round|已经玩了多少回合，而不是哪个|```var round = map.round;```|(整数) 0-15|
-|num_matches_to_win_series|赢得系列赛需要多少场比赛|```var need = map.num_matches_to_win_series;```|(整数)|
-|current_spectators|当前现场观众人数|```var spec = map.current_spectators;```|(整数)|
-|souvenirs_total|掉落的纪念品数量(majors)|```var souv = map.souvenirs_total;```|(整数)|
+|name|地图名称|```var name = map.name;//de_dust2```|(String)|
+|mode|当前的游戏模式|```var mode = map.mode;//competitive```|(String) competitive/deathmatch/etc...|
+|phase|当前的游戏阶段|```var phase = map.phase;```|(String) warmup/live/intermission/gameover|
+|round|已经玩了多少回合，而不是哪个|```var round = map.round;```|(int) 0-15|
+|num_matches_to_win_series|赢得系列赛需要多少场比赛|```var need = map.num_matches_to_win_series;```|(int)|
+|current_spectators|当前现场观众人数|```var spec = map.current_spectators;```|(int)|
+|souvenirs_total|掉落的纪念品数量(majors)|```var souv = map.souvenirs_total;```|(int)|
 
 ### 回合
 |Property|描述|例子|值|
@@ -382,7 +390,7 @@ function updatePage(data) {
 ### 阶段
 |Property|描述|例子|值|
 |---|---|---|---|
-|phase|队伍的分数|```var phase = phase.phase;```|(字符串) freezetime/live/over/bomb/defuse/paused/timeout_t/timeout_ct|
+|phase|队伍的分数|```var phase = phase.phase;```|(String) freezetime/live/over/bomb/defuse/paused/timeout_t/timeout_ct|
 |phase_ends_in|队伍的名称|```var time = phase.phase_ends_in;//"8.9"```|(字符串) 带小数点的时间 (秒)|
 
 ### 否决权
@@ -437,13 +445,13 @@ function updatePage(data) {
 |`/api/huds`|获取||`{players: [Array of HUD objects with unique _id property]}` 或者 `Status 500`|
 |`/api/huds`|发布|`{id: String, enabled: Boolean}`|状态 `200` 或者 `500`|
 
-## 信用
+## Credits
 
-- [osztenkurden](https://github.com/osztenkurden) - 原始 Repo 创建者 [链接](https://github.com/osztenkurden/Custom-CSGO-HUD)
-- [boldgolt](https://github.com/boltgolt) - HUD的雷达 [链接](https://github.com/boltgolt/boltobserv)
-- 正如我之前提到的, [RedSparr0w](https://github.com/RedSparr0w) 是我离不开的人.
-- [Bre3n](https://github.com/Bre3n) - 没有原始的 Overlay CSGO HUD [链接](https://github.com/Bre3n/CSGO)
-- [JohnTimmermann](https://github.com/JohnTimmermann) - 修复 Couch [链接](https://github.com/JohnTimmermann/Custom-CS2-HUD)
+- [osztenkurden](https://github.com/osztenkurden) - Original Repo Creator [link](https://github.com/osztenkurden/Custom-CSGO-HUD)
+- [boldgolt](https://github.com/boltgolt) - Radar on hud [link](https://github.com/boltgolt/boltobserv)
+- As I mentioned before, [RedSparr0w](https://github.com/RedSparr0w) is the man I wouldn't make it without.
+- [Bre3n](https://github.com/Bre3n) - No original Overlay CSGO HUD [link](https://github.com/Bre3n/CSGO)
+- [JohnTimmermann](https://github.com/JohnTimmermann) - Fix Couch [link](https://github.com/JohnTimmermann/Custom-CS2-HUD)
 
 
 ## 许可证
@@ -452,6 +460,6 @@ function updatePage(data) {
 
 以上部分不是法律建议，不具有法律约束力。请查看存储库中的许可证文件以获得完整的许可证。
 
-## FYFLO HUD
+## FYFLO的HUD说明
 
 关于购买FYFLO的HUD的问题，你需要发邮件给FYFLO。fyflostream@yandex.ru。FYFLO只会接俄罗斯联邦的HUD定制。
