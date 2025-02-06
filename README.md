@@ -3,6 +3,8 @@
 
 后面的代码项翻译可能不太准确，如果会的老登可以去[原文](https://github.com/fyflo/CS-CS2-CSGO-HUDS-Observer-fyflo)看看。
 
+详细操作视频B站UP主: [角落里的阳光](https://www.bilibili.com/video/BV1Fp421m7mU)。
+
 [原作者twitch](https://www.twitch.tv/fyflo)
 [汉化作者哔哩哔哩账号](https://space.bilibili.com/1244247113)
 [原作者DISCORD](https://discord.com/channels/392006529206976512/1315714438187323524)
