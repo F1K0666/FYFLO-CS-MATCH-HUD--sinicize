@@ -10,6 +10,23 @@
 [原作者DISCORD](https://discord.com/channels/392006529206976512/1315714438187323524)
 [聊天QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=YOEMEy-Wua8lnaPlQ2O13CHggFL77qTm&jump_from=webapi&authKey=0MIOvc4P6/yWUcHJcu1UfFQDyzFsJPmTfXZSGRbqQavgRNEEdF3d9LZxueHj0U2P)
 
+# 更新bd
+在原作者2.0.9版本中，数据库已经更新。现在使用lowbd数据库代替nebd数据库，因为它已经停止更新。而且我们需要更新node到最新版本。
+
+为了转移队员，队伍和HUD数据库，您需要下载这个文件夹，并在没有数据库文件夹的情况下创建文件夹。
+
+在打开时，我们会替换所有物品。
+
+1. 进到HUD文件夹，在地址栏中调用cmd。
+2. 逐条输入以下命令:
+```commands
+   	npm install lowdb@1.0.0 shortid nedb path
+	node migrations/migrate-teams.js
+	node migrations/migrate-huds.js
+	node migrations/nedb-to-lowdb.js
+```
+3. 现在通过CS2_HUD_fyflo.exe将其作为标准程序运行
+
 ## 如果动画不适合你
 启动overlay_v2.exe文件
 第一步:打开开始菜单，点击齿轮图标打开设置。或者也可以按 Win+I 键快速启动设置。
