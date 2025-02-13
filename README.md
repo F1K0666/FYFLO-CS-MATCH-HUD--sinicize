@@ -64,8 +64,7 @@
 
 <details><summary>例子</summary>
 
-![Ex1](https://i.imgur.com/d5aTrEG.png)
-![Ex2](https://i.imgur.com/eRsTkrZ.png)
+![Ex1](https://img520.com/ffldOy.png)
 
 </details>
 
@@ -201,32 +200,32 @@
 #### 队伍面板
 
 您可以在这里定义队伍，队名，队名简称(但简称实际上是不在任何地方用的)，队伍的国旗和头像。队伍头像的文件保存在 `public/storage/` 其文件名应从 `logo-`.
-![Ex1](https://i.imgur.com/7HPOrB0.png)
+![Ex1](https://img520.com/oBSOD7.png)
 
 #### 玩家面板
 
 在玩家标签中，你可以定义玩家的真实姓名，显示姓名，国旗(也可以设置为“与队伍相同”)，他们的队伍以及识别玩家 steam 64位ID. 玩家头像的文件保存在`public/storage/` 其文件名应从 `avatar-`.
-![Ex2](https://i.imgur.com/tiDnUPj.png)
+![Ex2](https://img520.com/ssxYMP.png)
 
 #### 创建比赛面板
 
 在这里你可以设置比赛的类型--这是一个NONE，BO1，BO3或BO5的选项卡，队伍的得分以及哪个队应该应用在HUD。如果队名放反了，下面有一个 `反转队伍信息` 按钮，点击后可以快速翻转队名，以便恢复正确。
 此外，如果在比赛期间，您想改变队伍或玩家信息，你可以改变它(例如在手机上，如果您允许通过防火墙的节点，您是在同一个局域网)，然后在这个标签点击 `强制刷新HUD`, 以确保应用所有更改。
 
-![Ex3](https://i.imgur.com/61l8zd7.png)
+![Ex3](https://img520.com/yCqzS2.png)
 
 ### HUDS
 
 此标签显示本地HUD。它们不会被验证是否能用，但是如果有任何文件丢失，它会在警告栏中通知你。
 您可以创建或删除每个HUD以使其能不能访问。还有HUD链接信息-如果你点击它，它会将您重新跳转到本地网页，即用作HUD。如果主播想要单独HUD界面，这很有用的——例如 它可以作为浏览器源添加到OBS中，然后你只需要将其设置为HUD的URL。
 这对于更大的流媒体工作空间可能很有用，例如对于具有不同PC的专门用于重放的设置-一个服务器应用程序将管理本地网络上的每个HUD，因为所有HUD都是可用的，如果它们没有被禁用的话。
-![Ex4](https://i.imgur.com/HbdH4Ia.png)
+![Ex4](https://img520.com/sDTGJV.png)
 
 ### 活动页面
 
 在这个标签中，您可以在HUD运行时显示/隐藏记分板和雷达边框
 
-![Ex5](https://i.imgur.com/cyg5Ws4.png)
+![Ex5](https://img520.com/TNRCfG.png)
 
 ## 如何创建自己的HUD
 进到 `public/huds` 复制粘贴 `default` 文件夹，并重新命名为你的心的内容-这就是你的HUD将如何显示在管理面板。
