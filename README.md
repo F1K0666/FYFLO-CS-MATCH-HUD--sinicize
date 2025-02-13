@@ -41,12 +41,20 @@
 
 ## 如果用OBS浏览器，雷达是灰色的
 + 我们需要替换OBS内的文件即可恢复
++ 下载[OBS替换文件](https://f1k0.lanzoue.com/ixVTA2nofvja)
++ 下面是替换教程:
+```commands
+	OBS(可能有不同的名称)\data\obs-plugins
+    	把压缩包解压后有2个文件夹分别是
+	obs-browser
+	win-dshow
+	复制替换原OBS文件夹即可
+```
 
 
 <details><summary>例子</summary>
 
-![Ex1](https://i.imgur.com/d5aTrEG.png)
-![Ex2](https://i.imgur.com/eRsTkrZ.png)
+![Ex1](https://img520.com/3VYVAB.png)
 
 </details>
 
