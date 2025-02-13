@@ -129,7 +129,12 @@
 - SteamLibrary\steamapps\common\Counter-Strike Global Offensive\ `game` \csgo\cfg\ `observer_on_map_cs2.cfg` 需要放在CS2位置的cfg文件夹中
 ##
 - CS:GO/CS2 需要全屏窗口运行（我知道人们可能不喜欢它，但因为它只是为了观察，所以......）
-- 在运行CS:GO/CS2并连接到比赛(或DEMO，你也可以在里面用这个)后，控制台输入` exec observer . CFG `/` observer _ on _ map _ CS2 `,它会使除地图和击杀信息之外的所有默认内容消失(可以使用` exec observer _ off . CFG `/` exec observer _ on _ map _ CS2 `恢复正常)
+- 如果想要随意开关游戏自带的UI可以看下面
+```commands
+	exec observer //可以关闭游戏内自带的UI
+	exec observer_off  //可以启用游戏内自带的UI
+	
+```
 - 确保填写 `config.json` 文件中的所有内容
 
 ## 配置
