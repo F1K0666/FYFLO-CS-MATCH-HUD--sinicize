@@ -133,7 +133,6 @@
 ```commands
 	exec observer //可以关闭游戏内自带的UI
 	exec observer_off  //可以启用游戏内自带的UI
-	
 ```
 - 确保填写 `config.json` 文件中的所有内容
 
