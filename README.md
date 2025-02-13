@@ -39,6 +39,17 @@
 ## 自动导播指令(目前会有BUG，请尝试后使用。)
 请在控制台输入以下指令 `spec_autodirector 1` 要关可以把1设置为0
 
+## 如果用OBS浏览器，雷达是灰色的
++ 我们需要替换OBS内的文件即可恢复
+
+
+<details><summary>例子</summary>
+
+![Ex1](https://i.imgur.com/d5aTrEG.png)
+![Ex2](https://i.imgur.com/eRsTkrZ.png)
+
+</details>
+
 ## 应用程序更新
 + 该应用程序添加了通过部分中的按钮管理团队的功能：几局几胜选项和局数胜利卡。.
 还增加了一个使用HUD投票地图的部分.
