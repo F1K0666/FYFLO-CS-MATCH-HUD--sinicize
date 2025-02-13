@@ -44,6 +44,7 @@
 + 下载[OBS替换文件](https://f1k0.lanzoue.com/ixVTA2nofvja)
 + 下面是替换教程:
 ```commands
+	按键盘上的 'win' 键，搜索OBS，然后打开软件的根目录
 	OBS(可能有不同的名称)\data\obs-plugins
     	把压缩包解压后有2个文件夹分别是
 	obs-browser
